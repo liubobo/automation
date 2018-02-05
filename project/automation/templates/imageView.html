@@ -1,0 +1,9 @@
+- (UIImageView *){{name}}
+{
+	if (!_{{name}})
+	{
+		_{{name}} = [[UIImageView alloc] init];
+		[_{{name}} setImage:[UIImage imageNamed:@"<#image#>"]];
+	}
+	return _{{name}};
+}

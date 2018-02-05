@@ -1,0 +1,36 @@
+#pragma mark - # {{name}}CollectionViewFlowLayout Getter
+- (NSMutableArray *)data
+{
+  if (!_data)
+  {
+    _data = [[NSMutableArray alloc] init];
+  }
+  return _data;
+}
+
+- (UICollectionViewFlowLayout *){{name}}CollectionViewFlowLayout
+{
+  if (!_{{name}}CollectionViewFlowLayout)
+  {
+    _{{name}}CollectionViewFlowLayout = [[UICollectionViewFlowLayout alloc] init];
+    [_{{name}}CollectionViewFlowLayout setMinimumLineSpacing:0];
+    [_{{name}}CollectionViewFlowLayout setMinimumInteritemSpacing:0];
+    [_{{name}}CollectionViewFlowLayout setItemSize:CGSizeMake(0, 0)];
+    [_{{name}}CollectionViewFlowLayout setHeaderReferenceSize:CGSizeMake(0, 0)];
+    [_{{name}}CollectionViewFlowLayout setFooterReferenceSize:CGSizeMake(0, 0)];
+    [_{{name}}CollectionViewFlowLayout setSectionInset:UIEdgeInsetsMake(0, 0, 0, 0)];
+  }
+  return _{{name}}CollectionViewFlowLayout;
+}
+
+- (UI{{name}}CollectionViewFlowLayout *){{name}}CollectionViewFlowLayout
+{
+  if (!_{{name}}CollectionViewFlowLayout)
+  {
+    _{{name}}CollectionViewFlowLayout = [[UICollectionViewFlowLayout alloc] initWithFrame:CGRectZero {{name}}CollectionViewFlowLayout:self.{{name}}CollectionViewFlowLayout];
+    [_{{name}}CollectionViewFlowLayout setBackgroundColor:[UIColor whiteColor]];
+    [_{{name}}CollectionViewFlowLayout setDelegate:self];
+    [_{{name}}CollectionViewFlowLayout setDataSource:self];
+  }
+  return _{{name}}CollectionViewFlowLayout;
+}

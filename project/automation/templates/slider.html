@@ -1,0 +1,9 @@
+- (UISlider *){{name}}
+{
+	if (!_{{name}})
+	{
+		_{{name}} = [[UISlider alloc] init];
+		[_{{name}} addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
+	}
+	return _{{name}};
+}

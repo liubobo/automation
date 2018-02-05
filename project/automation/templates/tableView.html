@@ -1,0 +1,22 @@
+#pragma mark - # Getter
+- (NSMutableArray *)data
+{
+	if (!_data)
+	{
+		_data = [[NSMutableArray alloc] init];
+	}
+	return _data;
+}
+
+- (UITableView *){{name}}
+{
+	if (!_{{name}})
+	{
+		_{{name}} = [[UITableView alloc] init];
+		[_{{name}} setDelegate:self];
+		[_{{name}} setDataSource:self];
+		[_{{name}} setSeparatorStyle:UITableViewCellSeparatorStyleSingleNone];
+
+	}
+	return _{{name}};
+}

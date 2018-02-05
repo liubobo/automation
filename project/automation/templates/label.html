@@ -1,0 +1,12 @@
+- (UILabel *){{name}}
+{
+	if (!_{{name}})
+	{
+		_{{name}}  = [[UILabel alloc] init];
+		[_{{name}} setText:@"<#tittle#>"];
+		[_{{name}} setFont:[UIFont systemFontOfSize:<#size#>]];
+		[_{{name}} setTextAlignment:NSTextAlignment<#type#>];
+		[_{{name}} setNumberOfLines:0];
+	}
+	return _{{name}};
+}
