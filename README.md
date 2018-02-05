@@ -1,7 +1,7 @@
 ---
 iOS代码自动化工具
 ---
-一直以来都想都行写个自动化的工具，简化iOS开发，自动化脚本主要有以下几种方式：
+一直以来都想写个自动化的工具，简化iOS开发，自动化脚本主要有以下几种方式：
 ``` bash
 commandline
 Xcode插件，苹果屏蔽了好多很好用的插件
@@ -66,6 +66,7 @@ cd automation/project && sudo python setup.py develop
 ![](iOS自动化/xib2file.gif)
 
 
+qq 602318557
 
 
 
