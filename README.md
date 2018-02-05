@@ -28,42 +28,42 @@ cd automation/project && sudo python setup.py develop
 服务收到选项 选文本表示可以获取文字内容，选文件夹，文件则可以获取文件路径
 保存后系统会在 ~/Library/Services 路径下生成workflow
 ```
-![你想输入的替代文字](iOS自动化/start.gif)
+![](iOS自动化/start.gif)
 
 ## 排序功能，会对多行文字按照长短来排序，可以排列头文件，或是排列的代码块
-![你想输入的替代文字](iOS自动化/sort.gif)
+![](iOS自动化/sort.gif)
 
 ## animation_view 会根据xcode中第一行来生成View的类名，下面的几个按照UI控件的类型来各自生成相应的UI代码
 命名的时候要规范，指定是Button或Label等
-![你想输入的替代文字](iOS自动化/view.gif)
+![](iOS自动化/view.gif)
 
 ## animation_cell 会根据xcode中第一行来生成Cell的类名,下面生成模板代码
-![你想输入的替代文字](iOS自动化/cell.gif)
+![](iOS自动化/cell.gif)
 
 ## animation_vc 会根据xcode中第一行来生成VC的类名,下面生成模板代码,事件，代理，方法等
-![你想输入的替代文字](iOS自动化/vc.gif)
+![](iOS自动化/vc.gif)
 
 ## animation_prop 功能可以生成属性代码
-![你想输入的替代文字](iOS自动化/prop.gif)
+![](iOS自动化/prop.gif)
 
 ## animation_getter 功能可以生成getter代码
-![你想输入的替代文字](iOS自动化/getter.gif)
+![](iOS自动化/getter.gif)
 
 ## animation_hidden 功能可以生成隐藏文件或文件夹
-![你想输入的替代文字](iOS自动化/sh.gif)
+![](iOS自动化/sh.gif)
 
 ## animation_mvc 功能可以根据文件夹批量生成文件夹mvc代码
-![你想输入的替代文字](iOS自动化/mvc.gif)
+![](iOS自动化/mvc.gif)
 
 ## animation_json2model 功能可以根据json来生成相应的属性代码，LoginModel的实现文件里面有个默认模板
 是根据自己的架构设计而来，需要修改的可以在templates目录改模板内容
-![你想输入的替代文字](iOS自动化/json2model.gif)
+![](iOS自动化/json2model.gif)
 
 ## animation_mkfolders 批量创建文件夹
-![你想输入的替代文字](iOS自动化/mkfolders.gif)
+![](iOS自动化/mkfolders.gif)
 
 ## animation_xib2file  可以把xib转化为代码文件，默认布局为masorny代码
-![你想输入的替代文字](iOS自动化/xib2file.gif)
+![](iOS自动化/xib2file.gif)
 
 
 
