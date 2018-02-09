@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7799b267-eb7a-4833-bb89-b75ca94bebbf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/automation/templates/view.html" afterPath="$PROJECT_DIR$/project/automation/templates/view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/automation/util.py" afterPath="$PROJECT_DIR$/project/automation/util.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,18 +22,18 @@
       <file leaf-file-name="xib2file.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/automation/xib2file.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="124" column="26" lean-forward="true" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
+            <state relative-caret-position="106">
+              <caret line="84" column="27" lean-forward="false" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="util.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="util.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project/automation/util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="125" column="4" lean-forward="false" selection-start-line="125" selection-start-column="4" selection-end-line="125" selection-end-column="4" />
+            <state relative-caret-position="157">
+              <caret line="133" column="76" lean-forward="false" selection-start-line="133" selection-start-column="76" selection-end-line="133" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -59,7 +59,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/automation/templates/view.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -83,6 +83,7 @@
       <find>make</find>
       <find>buttons</find>
       <find>controls</find>
+      <find>rect</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -98,9 +99,9 @@
         <option value="$PROJECT_DIR$/project/automation/templates/v.html" />
         <option value="$PROJECT_DIR$/project/automation/templates/vc.html" />
         <option value="$PROJECT_DIR$/project/automation/templates/cell.html" />
-        <option value="$PROJECT_DIR$/project/automation/util.py" />
         <option value="$PROJECT_DIR$/project/automation/xib2file.py" />
         <option value="$PROJECT_DIR$/project/automation/templates/view.html" />
+        <option value="$PROJECT_DIR$/project/automation/util.py" />
       </list>
     </option>
   </component>
@@ -628,22 +629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/automation/xib2file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="124" column="26" lean-forward="true" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/automation/util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="125" column="4" lean-forward="false" selection-start-line="125" selection-start-column="4" selection-end-line="125" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/automation/view.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -664,6 +649,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/automation/xib2file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="84" column="27" lean-forward="false" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/automation/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="133" column="76" lean-forward="false" selection-start-line="133" selection-start-column="76" selection-end-line="133" selection-end-column="76" />
           <folding />
         </state>
       </provider>

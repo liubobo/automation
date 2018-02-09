@@ -131,7 +131,7 @@ def gen_events(controls,objs):
         v = l[1]
         if str(result).endswith('Button'):
             buttons.append(result)
-        html = render_template(getControlType(result) + '.html', {'name': result,'rect':gen_rect(result,v)})
+        html = render_template(getControlType(result) + '.html', {'name': '_'+result,'rect':gen_rect(result,v)})
         getters += html + '\n'
     return buttons, getters
 
