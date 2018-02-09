@@ -4,7 +4,7 @@
 {
     
 {{layoutSubViews}}
-[self p_updateSubViews];
+    [self p_updateSubViews];
 
 }
 

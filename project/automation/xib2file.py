@@ -40,7 +40,12 @@ def genfile(path):
   filetypelist = ['Cell','View','ViewController']
   xibName = os.path.basename(path).split('.')[0]
 
-  fileType = filter(lambda x:xibName.endswith(x),filetypelist)[0]
+  fileType = 'view'
+  try:
+    fileType = filter(lambda x:xibName.endswith(x),filetypelist)[0]
+  except:
+    fileType = 'view'
+
   vList = ['activityIndicatorView','pageControl','tableViewCellContentView',"view","label","textField","textView","button","imageView","switch","tableView","scrollView",'segmentedControl']
 
   tree = etree.parse(path)
@@ -89,13 +94,15 @@ def genfile(path):
 
   def layoutSubViews(v):
       if not hasattr(v,'isRoot'):
-          parentView = 'self.' + getname(v.parent)
-          if hasattr(v.parent,'isRoot'):
-              parentView = 'self'
-              if fileType == 'cell':
-                  parentView = 'self.contentView'
-              parentView  = 'self.view' if fileType=='ViewController' else 'self'
-          return '['+parentView +' addSubview:'+'self'+'.' + getname(v)+']'
+
+          parentView = 'self'
+          if hasattr(v,'parent'):
+                  parentView = 'self.' + getname(v.parent)
+                  if hasattr(v.parent,'isRoot'):
+                      if fileType == 'cell':
+                          parentView = 'self.contentView'
+                      parentView  = 'self.view' if fileType=='ViewController' else 'self'
+          return '\t['+parentView +' addSubview:'+'self'+'.' + getname(v)+'];'
       else:
           return ''
 
@@ -152,11 +159,11 @@ def gen_mas(findViewById, view, fileType):
             result += '\t' + 'make.' + firstAttribute + ".mas_"+relation+"(" + constant + ")"
         if multiplier:
             result += '.multipliedBy('+str(multiplier)+')'
-        result+=';\n'
+        result+='\n'
 
     result += '\n' + "}];\n"
     return result
-# simulate(u'/Users/liubo/Desktop/代码工具/UINibParser-master-3/UINibParser/TestUIViewViewController.xib')
+# simulate(u'/Users/liubo/Downloads/DemoTableView1.xib')
 map(genfile,set(map(lambda line:str(line).strip('\n').strip(' '),readlines_from_stdin())))
 
 
