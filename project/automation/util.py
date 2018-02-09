@@ -74,20 +74,40 @@ def gen_protocols(controls):
         protocolStr += '<' + ','.join(protocols) + '>'
     return protocolStr
 
+
 def gen_props(controls):
     props = ''
     for result in controls:
+        if (getControlType(result) == 'costom'):
+            props += '@property(nonatomic, strong)' +'<#type#>' +' *'+result+';\n';
         regex = r"[A-Z][a-z].*"
         matches = re.finditer(regex, result)
         for matchNum, match in enumerate(matches):
-            props += '@property(nonatomic, strong)' + 'UI' + str(match.group()) + ' *' + str(result) + ';' + '\n'
+            props += '@property(nonatomic, strong)' + 'UI' +  myCap(getControlType(result))+ ' *' + str(result) + ';' + '\n'
     return props
 
 def gen_subViews(controls):
     subviews = ''
+
     for result in controls:
-        subviews += '[self.contentView addSubview:self.' + result + '];' + '\n';
+        subviews += '\t[self addSubview:self.' + result + '];' + '\n';
     return subviews
+
+def gen_subViewByType(controls,vtype):
+    vprent = 'self'
+    if vtype == 'tableViewCell':
+        vprent = 'self.contentView'
+    if vtype == 'viewController':
+        vprent = 'self.view'
+
+    subviews = ''
+    for result in controls:
+        if getControlType(result) == 'costom':
+            subviews +=''
+        else:
+            subviews += '\t\t['+vprent +' addSubview:self.' + result + '];' + '\n';
+    return subviews
+
 
 def gen_event(controls):
     buttons = []
@@ -117,16 +137,25 @@ def gen_events(controls,objs):
 
 
 def gen_Temple(m_type):
+
     lines = readlines_from_stdin()
     name = lines[0]
     controls = lines[1:]
-    protocolStr = gen_protocols(controls)
+    protocolStr = gen_protocols(controls) if gen_protocols(controls)!='<>' else ''
     props = gen_props(controls)
-    subviews = gen_subViews(controls)
+
+    vtype = 'view'
+    if name.lower().endswith('cell'):
+        vtype = 'tableViewCell'
+    if name.lower().endswith('viewcontroller'):
+        vtype = 'viewController'
+
+    subviews = gen_subViewByType(controls,vtype)
     buttons, getters = gen_event(controls)
 
+
     context = {'name': name,
-               'controls': controls,
+               'controls': filter(lambda v:getControlType(v)!='costom',controls),
                'protocolStr': protocolStr,
                'props': props,
                'subviews': subviews,

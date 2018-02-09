@@ -1,6 +1,4 @@
 from util import *
-# simulate(u"bottomLineView\njkk\nljlj")
-
 regex = r"\b[\w]*?(?=[;\n])"
 matches = re.finditer(regex, ''.join([x+';' for x in readlines_from_stdin()]))
 
