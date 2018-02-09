@@ -121,7 +121,7 @@ def gen_event(controls):
 
 def gen_rect(name,view):
     if hasAttrib(view,'rect'):
-        return name+'.rect = ' + 'CGReactMake('+view.rect.x +','+view.rect.y+','+view.rect.width+','+view.rect.height+')'
+        return name+'.frame = ' + 'CGReactMake('+view.rect.x +','+view.rect.y+','+view.rect.width+','+view.rect.height+')'
 
 def gen_events(controls,objs):
     buttons = []

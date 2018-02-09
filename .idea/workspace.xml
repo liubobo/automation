@@ -22,7 +22,7 @@
       <file leaf-file-name="xib2file.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/automation/xib2file.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
+            <state relative-caret-position="15">
               <caret line="84" column="27" lean-forward="false" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="27" />
               <folding />
             </state>
@@ -32,8 +32,8 @@
       <file leaf-file-name="util.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project/automation/util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="133" column="76" lean-forward="false" selection-start-line="133" selection-start-column="76" selection-end-line="133" selection-end-column="76" />
+            <state relative-caret-position="75">
+              <caret line="123" column="27" lean-forward="false" selection-start-line="123" selection-start-column="27" selection-end-line="123" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -112,8 +112,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="104" />
-    <option name="y" value="105" />
+    <option name="x" value="140" />
+    <option name="y" value="147" />
     <option name="width" value="1112" />
     <option name="height" value="677" />
   </component>
@@ -471,7 +471,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="104" y="105" width="1112" height="677" extended-state="0" />
+    <frame x="140" y="147" width="1112" height="677" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26074767" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -482,7 +482,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32136753" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37094018" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3083004" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -655,7 +655,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project/automation/xib2file.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
+        <state relative-caret-position="15">
           <caret line="84" column="27" lean-forward="false" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="27" />
           <folding />
         </state>
@@ -663,8 +663,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project/automation/util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="133" column="76" lean-forward="false" selection-start-line="133" selection-start-column="76" selection-end-line="133" selection-end-column="76" />
+        <state relative-caret-position="75">
+          <caret line="123" column="27" lean-forward="false" selection-start-line="123" selection-start-column="27" selection-end-line="123" selection-end-column="27" />
           <folding />
         </state>
       </provider>
