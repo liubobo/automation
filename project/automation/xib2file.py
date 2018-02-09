@@ -15,7 +15,7 @@ def getPops(v):
 
 def buttonTouchs(v):
   if not hasattr(v, 'isRoot') and v.tag == 'button':
-      return '- (void)' + getname(v) + '''ButtonTouchUpInside:(UIButton *)sender\n{\n}'''
+      return '- (void)' + getname(v) + '''TouchUpInside:(UIButton *)sender\n{\n}'''
   else:
       return ''
 

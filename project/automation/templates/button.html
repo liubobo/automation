@@ -3,7 +3,7 @@
 	if (!_{{name}})
 	{
 		_{{name}}= [[UIButton alloc] init];
-		[_{{name}} addTarget:self action:@selector(buttonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+		[_{{name}} addTarget:self action:@selector({{ name }}TouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
 		[_{{name}} setTitle:@"<#title#>" forState:UIControlStateNormal];
 		[_{{name}} setImage:[UIImage imageNamed:@"<#str#>"] forState:UIControlStateNormal];
         {{ rect }}
