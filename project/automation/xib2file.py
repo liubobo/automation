@@ -57,9 +57,11 @@ def genfile(path):
           child.props = my(child.attrib)
           child.subviews = []
           viewlist.append(child)
+          if child.attrib.get('userLabel'):
+              child.name = child.attrib.get('userLabel')
   #parse outlets names
-      if child.tag == 'placeholder':
-          if child.attrib['placeholderIdentifier'] == 'IBFilesOwner':
+
+      if child.tag == 'connections':
               for outLets in child.iter():
                   if outLets.attrib.get('property'):
                       namelist.append(outLets)
@@ -72,6 +74,7 @@ def genfile(path):
       for name in namelist:
           if view.props.id == name.attrib.get('destination'):
               view.name = name.attrib.get('property')
+              print view.name
       if view.tag in vList:
          for child in view.iter():  # subviews
            if child.tag in vList:
@@ -163,7 +166,7 @@ def gen_mas(findViewById, view, fileType):
 
     result += '\n' + "}];\n"
     return result
-# simulate(u'/Users/liubo/Downloads/DemoTableView1.xib')
+# simulate(u'/Users/liubo/Downloads/DemoView.xib')
 map(genfile,set(map(lambda line:str(line).strip('\n').strip(' '),readlines_from_stdin())))
 
 
