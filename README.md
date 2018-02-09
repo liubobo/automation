@@ -65,7 +65,7 @@ cd automation/project && sudo python setup.py develop
 ## automation_xib2file  可以把xib转化为代码文件，默认布局为masorny代码
 ![](iOS自动化/xib2file.gif)
 
-
+持续完善中，如有bug，issue，或是还有可以自动化的地方可以联系我
 qq 602318557
 
 
