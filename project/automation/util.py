@@ -169,8 +169,8 @@ def gen_Temple(m_type):
     # raise Exception(line)
     #    os.system("pbpaste > m.txt")
 
-
-
+def prn_obj(obj):
+    print '\n'.join(['%s:%s' % item for item in obj.__dict__.items()])
 
 
 
