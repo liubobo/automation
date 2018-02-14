@@ -8,11 +8,17 @@ def getProps(rline):
     if len(splitList) >= 2:
         stype = splitList[0]
         if stype == 's':
-            stype = 'NSSTring'
+            stype = 'NSString'
         if stype == 'a':
             stype = 'NSArray'
         if stype == 'd':
             stype = 'NSDictionary'
+        if stype == 'ms':
+            stype = 'NSMutableString'
+        if stype == 'ma':
+            stype = 'NSMutableArray'
+        if stype == 'md':
+            stype = 'NSMutableDictionary'
 
         return '@property(nonatomic, strong) {} *{};'.format(stype, splitList[1])
     else:
