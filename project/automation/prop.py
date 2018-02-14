@@ -1,12 +1,16 @@
 # from ios_code_generator import getter
 from util import *
+from viewLists import vList as availables
 
-for x in readlines_from_stdin():
-	result = str(x).strip('\n').strip(' ')
-	if len(result) != 0:
-		regex = r"[A-Z][a-z].*"
-		matches = re.finditer(regex, result)
-		for matchNum, match in enumerate(matches):	
-			print '@property(nonatomic, strong)' + 'UI'+str(match.group())+'*'+str(x)+';'
+for line in readlines_from_stdin():
+    rline = str(line).strip('\n').strip(' ')
+    splitList = filter(lambda m:len(m.strip(' ')), re.split(r'[;,\s]\s*', rline))
 
-
+    if len(splitList) >= 2:
+        print '@property(nonatomic, strong) {} *{};'.format(splitList[0], splitList[1])
+    else:
+        try:
+            vtype = filter(lambda v:rline.endswith(v.replace('UI', '')), availables)[0]
+            print '@property(nonatomic, strong) {} *{};'.format(vtype, rline)
+        except:
+            print '@property(nonatomic, strong) {} *{};'.format('<#type#>', rline)

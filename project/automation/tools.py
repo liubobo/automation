@@ -41,3 +41,30 @@ def render_template(template_filename, context):
 	    trim_blocks=False)
 	return TEMPLATE_ENVIRONMENT.get_template(template_filename).render(context)
 
+def gettype(v):
+    vtype = ''
+    try:
+        vtype = 'UI' + toCap(v.type)
+    except:
+        vtype = 'normal'
+    return vtype
+
+def is_ui(v):
+    vtype = gettype(v)
+    return vtype in availables
+
+def gen_property(v):
+    vtype = gettype(v)
+    if vtype in availables:
+        return  '@property(nonatomic, strong) {} *{};'.format(vtype,v.name)
+    else:
+        return  '@property(nonatomic, strong) {} *{};'.format('<#type#>',v)
+
+def gen_layout(v):
+    if v.parent is None and get_filetype(f) == 'Cell':
+        return '\t[self.{} addSubview:self.{}];'.format('contentView', v.name)
+    return '\t[self.{} addSubview:self.{}];'.format(v.parent.name,v.name)
+def gen_event(v):
+    if v.type == 'button':
+         return  '- (void){}TouchUpInside:(UIButton *)sender'.format(v.name)+'{ \n}'
+    return ''

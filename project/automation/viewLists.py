@@ -1,7 +1,7 @@
 vList = ['UIDragItem', 'UIPageControl','UIAlertView', 'UIViewController',
          'UIToolbar','UILabel','UIScrollView', 'UISwitch', 'UITabBarItem','UIAlertController', 'UISearchController',
          'UIPushBehavior', 'UIPickerView', 'UIMotionEffectGroup', 'UIInputView','UIGravityBehavior',
-          'UITableViewHeaderFooterView', 'UIView', 'UISearchDisplayController',
+          'UITableViewHeaderFooterView', 'UISearchDisplayController',
          'UIAccessibilityCustomAction', 'UIAlertAction',  'UIStackView', 'UISlider',
          'UIFocusGuide', 'UIDropProposal', 'UICollectionViewCell', 'UILongPressGestureRecognizer', 'UIButton',
          'UIPresentationController', 'UIPrintInteractionController', 'UIApplication', 'UIWebView', 'UIVisualEffectView',
@@ -49,4 +49,4 @@ vList = ['UIDragItem', 'UIPageControl','UIAlertView', 'UIViewController',
          'UIContextualAction', 'UIGraphicsPDFRendererFormat', 'UIGestureRecognizer', 'UIPanGestureRecognizer',
          'UICollectionView', 'UITabBarController', 'UIMenuController', 'UITextView', 'UIPopoverBackgroundView',
          'UIVideoEditorController', 'UISwipeGestureRecognizer', 'UITableViewCell', 'UINavigationController',
-          'UIPopoverController', 'UITabBar']
+          'UIPopoverController', 'UITabBar', 'UIView']
