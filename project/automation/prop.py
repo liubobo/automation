@@ -8,8 +8,9 @@ def getProps(rline):
     rline = str(line).strip('\n').strip(' ')
     splitList = filter(lambda m: len(m.strip(' ').strip(';')), re.split(r'[;,\s]\s*', rline))
     assinlist = ['int','double','float','NSInteger','CGFloat','CGRect','CGPoint','bool','BOOL']
-
-    if len(splitList) >= 2:
+    if rline.startswith('//'):
+        yield rline
+    elif len(splitList) >= 2:
         stype = splitList[0]
         if stype in assinlist:
             propWs = 'assign'
@@ -45,7 +46,7 @@ def getProps(rline):
                 yield '@property(nonatomic, {}) {} {}{};'.format(propWs,'NSMutableArray',propStar, splitList[1] + 'Array')
             yield '@property(nonatomic, {}) {} {}{};'.format(propWs,vtype,propStar, rline)
         except:
-            yield '@property(nonatomic, strong) {} *{};'.format('<#type#>',propStar,rline)
+            yield '@property(nonatomic, {}) {} {}{};'.format(propWs,'<#type#>',propStar,rline)
 
 for line in readlines_from_stdin():
     for x   in   getProps(line):
