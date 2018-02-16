@@ -8,7 +8,7 @@
 			<key>NSMenuItem</key>
 			<dict>
 				<key>default</key>
-				<string>testPy</string>
+				<string>showService</string>
 			</dict>
 			<key>NSMessage</key>
 			<string>runWorkflowAsService</string>

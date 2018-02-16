@@ -1,0 +1,46 @@
+
+#import "{{name}}.h"
+
+@interface {{name}} (){{ protocols }}
+
+{{props}}
+
+@end
+
+@implementation {{name}}
+
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+	if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier])
+	{
+{{ subviews }}
+		[self p_addMasonry];
+	}
+	return self;
+}
+#pragma mark - # Event Response
+{% for button in buttons%}
+- (void){{button}}TouchUpInside:(UIButton *)sender
+{	
+}
+{% endfor %}
+#pragma mark - # Private Methods
+- (void)p_addMasonry
+{
+{% if hasmas %}
+{{ masornys }}
+{% else  %}
+{% for masorny in masornys%}
+	[self.{{masorny[1]}} mas_makeConstraints:^(MASConstraintMaker *make)
+	{
+	}];
+{% endfor %}
+
+{% endif %}
+}
+
+
+#pragma mark - # Getter
+{{getters}}
+
+@end

@@ -1,9 +1,0 @@
-- (UISwitch *){{name}}
-{
-	if (!_{{name}})
-	{
-		_{{name}} = [[UISwitch alloc] init];
-		[_{{name}} addTarget:self action:@selector(switchValueChanged:) forControlEvents:UIControlEventValueChanged];
-	}
-	return _{{name}};
-}
