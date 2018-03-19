@@ -7,6 +7,8 @@ from ATool import jsontofield
 from ATool import mkmvc
 from ATool import mvcTempleMaker
 from ATool import xibparse
+from ATool import wk
+
 
 def sort():
     sortcode.sortcode()
@@ -45,6 +47,8 @@ def output_mvc():
 def output_xib():
     map(xibparse.gen_xib_file,Util.readlines_from_stdin())
 
+def rename_file(f,old,new):
+	wk.traverse(f,old,new)
 
 
 # f = '/Users/liubo/Documents/nib/automatic/automatic/sssTableViewCell.xib'

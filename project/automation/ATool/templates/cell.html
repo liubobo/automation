@@ -31,8 +31,7 @@
 {{ masornys }}
 {% else  %}
 {% for masorny in masornys%}
-	[self.{{masorny[1]}} mas_makeConstraints:^(MASConstraintMaker *make)
-	{
+	[self.{{masorny[1]}} mas_makeConstraints:^(MASConstraintMaker *make){
 	}];
 {% endfor %}
 
