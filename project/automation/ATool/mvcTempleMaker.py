@@ -7,6 +7,7 @@ def get_type_name(input_lines):
          for rline in props.getProps(line):
             mtype = filter(lambda x: len(x), re.split(r'[;,\s ]\s*', rline))[2].replace('*', '')
             name = filter(lambda x: len(x), re.split(r'[;,\s ]\s*', rline))[3].replace('*', '')
+
             sf = ''
             try:
                 sf = filter(lambda x: len(x), re.split(r'[;,\s ]\s*', line))[2].replace('*', '')
@@ -94,7 +95,11 @@ def output_type(mtype):
                             'getters':result
                             })
 
-    print html
+    if mtype == 'cell':
+        html = html.replace('self.view','self.contentView')
+    if mtype == 'v':
+        html = html.replace('self.view', 'self')
 
+    print html
 
 

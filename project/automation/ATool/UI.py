@@ -3,10 +3,6 @@ from  Util import *
 
 from  mydict import MyDict as my
 
-
-
-
-
 class UI(object):
     def __init__(self):
         self.frame = 'CGRectMake(0,0,0,0)'
