@@ -59,10 +59,7 @@ mTempleh = '''
 
 @interface ${name}Model : HYBModel
 
-@property(nonatomic, strong) NSString *name;
-@property(nonatomic, strong) NSString *pwd;
-
-@property(nonatomic, strong) NSString *info;
+ 
 
 @end
 
