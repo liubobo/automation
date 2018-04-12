@@ -83,15 +83,15 @@ mTemplem = '''
 
 - (NSString *)protocolUrl {
         return requestUrl(@"<#host#>", @"<#ver#>", @"<#path#>");
-    }
+}
 
-    - (HYBHttp)method {
+- (HYBHttp)method {
         return HYBHttp<#method#>;
-    }
+}
 
-    - (NSString *)description {
+- (NSString *)description {
         return @"<#接口描述#>";
-    }
+}
 
 @end
 
@@ -107,11 +107,9 @@ vTempleh = '''
 //
 
 #import "HYBView.h"
-#import "HYBRegisterViewModel.h"
 
 @interface ${name}View : HYBView
 
-@property(nonatomic, strong) HYBRegisterViewModel *viewModel;
 
 @end
 
@@ -130,16 +128,6 @@ vTemplem = '''
 #import "${name}View.h"
 
 @implementation ${name}View
-
-- (instancetype)initWithViewModel:(id<HYBViewModelProtocol>)viewModel {
-    self.viewModel = (HYBRegisterViewModel *)viewModel;
-    return [super initWithViewModel:viewModel];
-}
-
-//如果数据变化，需要刷新视图的话，可以在这里监听
-- (void)hyb_bindViewModel {
-
-}
 
 - (void)hyb_setupViews {
 
@@ -186,25 +174,24 @@ cTemplem = '''
 
 @implementation ${name}ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+//1.设置导航
+- (void)hyb_layoutNavigation {
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+//2.初始化数据
+- (void)hyb_setUpData {
+
 }
 
-/*
- #pragma mark - Navigation
+//3.摆放view
+- (void)hyb_addSubviews {
 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+}
+
+//4.获取新数据刷新
+- (void)hyb_getNewData {
+}
 
 @end
 

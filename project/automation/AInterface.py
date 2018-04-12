@@ -51,9 +51,6 @@ def rename_file(f,old,new):
 	wk.traverse(f,old,new)
 
 
-# f = '/Users/liubo/Documents/nib/automatic/automatic/sssTableViewCell.xib'
-# f = '/Users/liubo/Documents/nib/automatic/automatic/fsViewController.xib'
-# f = '/Users/liubo/Documents/nib/automatic/automatic/qqqView.xib'
 
 
 
