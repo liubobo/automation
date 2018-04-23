@@ -140,6 +140,7 @@ def mas_method(firstItem,firstAttribute,secondItem,secondAttribute,multiplier,co
             secondAttribute = 'view'
     else:
         secondItem = 'self.'+find_ui_byid(secondItem, uis).name
+        secondAttribute = 'mas_'+secondAttribute
 
     s = '\t\tmake.${firstAttribute}.${relation}(${secondItem}.${secondAttribute}).mas_offset(${constant}).multipliedBy(${multiplier})'
     s  =  string.Template(s).safe_substitute({'firstAttribute': firstAttribute,
