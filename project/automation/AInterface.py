@@ -8,7 +8,7 @@ from ATool import mkmvc
 from ATool import mvcTempleMaker
 from ATool import xibparse
 from ATool import wk
-
+from ATool.Util import readlines_from_stdin
 
 def sort():
     sortcode.sortcode()
@@ -32,7 +32,12 @@ def output_getter():
     getters.out_getters()
 
 def output_props():
-    props.output_props()
+    props.output_props(lines)
+
+def output_props_getters():
+    lines = readlines_from_stdin()
+    props.output_props(lines)
+    getters.out_getters(lines)
 
 def output_json2field():
     jsontofield.output_json2field()

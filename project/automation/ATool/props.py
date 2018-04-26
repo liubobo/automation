@@ -50,11 +50,16 @@ def getProps(line):
 
 
 
-def output_props():
-    for line in readlines_from_stdin():
-        for x   in   getProps(line):
-            print x
+def output_props(inputs=[]):
 
+    if(len(inputs)==0):
+        for line in readlines_from_stdin():
+            for x   in   getProps(line):
+                print x
+    else:
+        for line in inputs:
+            for x in getProps(line):
+                print x
 
 '''
 //s 代码字符串 a 表示array d 表示dict 加m表示可变

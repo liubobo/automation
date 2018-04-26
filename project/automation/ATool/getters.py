@@ -15,9 +15,14 @@ def gen_getter(rline):
         return render_template('custom' + '.html', {'name': name,'type':mtype})
 
 
-def out_getters():
-    l = readlines_from_stdin()
-    if len(filter(lambda line:'@property' in line,l)):
+def out_getters(lines = []):
+    l = []
+    if len(lines) == 0:
+        l = readlines_from_stdin()
+    else:
+        l = lines
+
+    if len(filter(lambda line: '@property' in line, l)):
         for line in l:
             print line
 
