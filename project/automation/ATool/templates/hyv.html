@@ -1,0 +1,48 @@
+//
+//  Created by  liubo on 2018/1/28.
+//  Copyright © 2017年 <#company#>. All rights reserved.
+//
+
+#import "{{name}}.h"
+
+@interface {{name}} (){{ protocols }}
+
+{{props}}
+
+@end
+
+@implementation {{name}}
+
+-(void)hyb_setupViews{
+
+    {{ hyb_addSubviews }}
+
+    }
+
+#pragma mark - # Event Response
+{% for button in buttons%}
+- (void){{button}}TouchUpInside:(UIButton *)sender
+{	
+}
+{% endfor %}
+
+
+#pragma mark - # Private Methods
+- (void)p_addMasonry
+{
+{% if hasmas %}
+{{ masornys }}
+    {% else  %}
+{% for masorny in masornys%}
+	[self.{{masorny[1]}} mas_makeConstraints:^(MASConstraintMaker *make){
+	}];
+{% endfor %}
+
+{% endif %}
+}
+
+
+#pragma mark - # Getter
+{{getters}}
+
+@end

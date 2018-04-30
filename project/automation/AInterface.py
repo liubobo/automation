@@ -11,6 +11,7 @@ from ATool import xibparse
 from ATool import wk
 from ATool.Util import readlines_from_stdin
 from ATool.Util import simulate
+from ATool import gen_hyb_xib
 
 def sort():
     sortcode.sortcode()
@@ -57,8 +58,11 @@ def output_xib():
 def rename_file(f,old,new):
 	wk.traverse(f,old,new)
 
-simulate(u'/Users/liubo/Desktop/ImageViewController.xib')
-output_xib()
+def gen_hyb():
+    map(gen_hyb_xib.gen_xib_file,Util.readlines_from_stdin())
+
+# simulate(u'/Users/liubo/Downloads/RollingView/RollingView/fdsView.xib')
+# gen_hyb()
 
 
 

@@ -1,0 +1,80 @@
+//
+//  {{name}}.m
+//
+//  Created by liubo on 2018/1/28.
+//  Copyright © 2017年 <#company#>. All rights reserved.
+//
+
+#import "{{name}}.h"
+
+@interface {{name}} (){{protocols}}
+
+{{props}}
+
+@end
+
+@implementation {{name}}
+
+#pragma mark - # Life Cycle
+
+#pragma mark - Override Methods
+//1.设置导航
+- (void)hyb_layoutNavigation {
+    self.navigationItem.title = nil;
+}
+
+//2.初始化数据
+- (void)hyb_setUpData {
+}
+
+//3.摆放view
+- (void)hyb_addSubviews {
+    {{ hyb_addSubviews }}
+}
+
+//4.获取新数据刷新
+- (void)hyb_getNewData {
+}
+
+#pragma mark - Intial Methods
+
+#pragma mark - Network Methods
+
+#pragma mark - # Event Response
+{% for button in buttons%}
+- (void){{button}}TouchUpInside:(UIButton *)sender
+{
+}
+{% endfor %}
+
+#pragma mark - Public Methods
+
+#pragma mark - Private Methods
+
+
+{% if hasProtocls %}
+#pragma mark - # Delegate
+//MARK: UITableViewDataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+	return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+	return self.data.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	return nil;
+}
+
+//MARK: UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	
+}
+{% endif %}
+
+@end
