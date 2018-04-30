@@ -1,3 +1,4 @@
+#encoding=utf-8
 from ATool import sortcode
 from ATool import Util
 from ATool import folderUtil
@@ -9,6 +10,7 @@ from ATool import mvcTempleMaker
 from ATool import xibparse
 from ATool import wk
 from ATool.Util import readlines_from_stdin
+from ATool.Util import simulate
 
 def sort():
     sortcode.sortcode()
@@ -32,6 +34,7 @@ def output_getter():
     getters.out_getters()
 
 def output_props():
+    lines = readlines_from_stdin()
     props.output_props(lines)
 
 def output_props_getters():
@@ -44,7 +47,6 @@ def output_json2field():
 
 def output_temple_type(mtype):
     mvcTempleMaker.output_type(mtype)  #c,v,cell
-
 #=======
 def output_mvc():
     mkmvc.output_mvc()
@@ -55,7 +57,8 @@ def output_xib():
 def rename_file(f,old,new):
 	wk.traverse(f,old,new)
 
-
+simulate(u'/Users/liubo/Desktop/ImageViewController.xib')
+output_xib()
 
 
 

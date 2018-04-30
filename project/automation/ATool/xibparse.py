@@ -60,8 +60,10 @@ def set_view_name(root, ui_list):
         if outlet.tag == 'outlet':
             v_id = outlet.attrib.get('destination')
             v_name = outlet.attrib.get('property')
-            v = filter(lambda v: v.id == v_id, ui_list)[0]
-            v.name = v_name
+            arr = filter(lambda v: v.id == v_id, ui_list)
+            if len(arr):
+                v = arr[0]
+                v.name = v_name
 def find_ui_byid(vid,ui_list):
     try:
         return filter(lambda v:v.id == vid,ui_list)[0]
@@ -210,7 +212,7 @@ def gen_xib_file(f):
             ui.name = 'contentView'
             file_type == 'View'
     allSubUI = uis[2:] if file_type == 'Cell' else uis[1:]
-    uiNames = map(lambda ui: 'UI' + toCap(ui.type) + ' ' + ui.name + '  ' + 'self.' + ui.parent.name, allSubUI[1:])
+    uiNames = map(lambda ui: 'UI' + toCap(ui.type) + ' ' + ui.name + '  ' + 'self.' + ui.parent.name, allSubUI[0:])
     render_getter = ''
     for x in ''.join(map(lambda v: gen_getter(v), allSubUI)).split('\n'):
         if len(x.strip()):
