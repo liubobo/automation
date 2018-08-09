@@ -48,7 +48,6 @@ def output_mvc():
 mTempleh = '''
 //
 //  HYLoginModel.h
-//  BaiBaoBox
 //
 //  Created by liubo on 2017/12/21.
 //  Copyright © 2017年 liubo. All rights reserved.
@@ -68,7 +67,6 @@ mTempleh = '''
 mTemplem = '''
 //
 //  ${name}Model.m
-//  BaiBaoBox
 //
 //  Created by liubo on 2017/12/21.
 //  Copyright © 2017年 liubo. All rights reserved.
@@ -97,7 +95,6 @@ mTemplem = '''
 vTempleh = '''
 //
 //  DemoView.h
-//  HengYiBao
 //
 //  Created by liubo on 2017/12/22.
 //  Copyright © 2017年 liubo. All rights reserved.
@@ -116,7 +113,6 @@ vTemplem = '''
 
 //
 //  ${name}View.m
-//  HengYiBao
 //
 //  Created by liubo on 2017/12/22.
 //  Copyright © 2017年 liubo. All rights reserved.
@@ -138,7 +134,6 @@ vTemplem = '''
 cTempleh = '''
 //
 //  ${name}ViewController.h
-//  HengYiBao
 //
 //  Created by liubo on 2018/2/1.
 //  Copyright © 2018年 liubo. All rights reserved.
@@ -157,7 +152,6 @@ cTempleh = '''
 cTemplem = '''
 //
 //  ${name}ViewController.m
-//  HengYiBao
 //
 //  Created by liubo on 2018/2/1.
 //  Copyright © 2018年 liubo. All rights reserved.
