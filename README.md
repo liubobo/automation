@@ -15,7 +15,7 @@ https://github.com/liubobo/automation.git
 ## 安装方式
 ``` bash
 git clone https://github.com/liubobo/automation.git
-cd automation/project && sudo python setup.py develop
+cd automation/project && sudo /usr/bin/python setup.py develop
 点击安装Services下的workflow
 ```
 
