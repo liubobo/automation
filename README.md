@@ -72,7 +72,7 @@ https://github.com/liubobo/chain
 ![](iOS自动化/xib2file.gif)
 
 持续完善中，如有bug，issue，或是还有可以自动化的地方可以联系我
-群 197179386
+qq 602318557
 
 
 
