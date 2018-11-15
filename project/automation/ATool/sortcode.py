@@ -54,17 +54,15 @@ def sortcode():
         print '\n'.join(map(lambda x: x.values()[0], alist))
         return
 
-    if len(re.findall(r'''[A-z].*\*.*''', joinedStr)):
+    if len(re.findall(r'''^\w.*\*.*''', joinedStr)):
        alist = map(lambda l:{l.split('*')[0]:l},lines)
        if  len(set(map(lambda l: l.split('*')[0].strip(), lines))) ==1:
-           lines.sort(key=lambda x: len(x))  # a b c ,last len
+           lines.sort(key=lambda x: x)  # a b c ,last len
            map(print_obj, lines)
            return
-
        alist.sort(key=takeSecond)
        print '\n'.join(map(lambda x:x.values()[0],alist))
        return
-
 
     if '#import' in joinedStr or '#include' in joinedStr:
         sortImport(lines)
