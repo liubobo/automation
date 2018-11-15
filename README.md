@@ -68,7 +68,7 @@ https://github.com/liubobo/chain
 ## automation_mkfolders 批量创建文件夹
 ![](iOS自动化/mkfolders.gif)
 
-## automation_xib2file  可以把xib转化为代码文件，默认布局为masorny代码
+## automation_xib2file  可以把xib转化为代码文件，默认布局为masorny代码,在Document的Label标签下可以给控件起名字
 ![](iOS自动化/xib2file.gif)
 
 持续完善中，如有bug，issue，或是还有可以自动化的地方可以联系我
