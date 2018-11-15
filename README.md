@@ -30,7 +30,7 @@ https://github.com/liubobo/chain
 服务收到选项 选文本表示可以获取文字内容，选文件夹，文件则可以获取文件路径
 保存后系统会在 ~/Library/Services 路径下生成workflow
 
-苹果在macos 10.14改变了这个新建选项，变成了快速操作选项
+苹果在macos 10.14改变了这个新建选项，变成了快速操作选项,只是名字变了，作用一样
 ```
 ![](iOS自动化/start.gif)
 
