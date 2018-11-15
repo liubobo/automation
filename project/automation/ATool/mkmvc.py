@@ -10,7 +10,7 @@ def genDir(path):
 	dic	 = {
 		    	'Model':[mTempleh,mTemplem],
 		    	'View' :[vTempleh,vTemplem],
-		    	'Controller':[cTempleh,cTemplem]
+		    	'ViewController':[cTempleh,cTemplem]
 		    }
 
 	for k,v in dic.items():
@@ -32,31 +32,16 @@ def output_mvc():
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 mTempleh = '''
 //
-//  HYLoginModel.h
-//
-//  Created by liubo on 2017/12/21.
-//  Copyright © 2017年 liubo. All rights reserved.
+//  Created by 自定义 on 2017/12/21.
+//  Copyright © 2017年 自定义. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "HYBModel.h"
+#import "AMModel.h"
 
-@interface ${name}Model : HYBModel
+@interface ${name}Model : AMModel
 
  
 
@@ -80,8 +65,8 @@ mTemplem = '''
         return requestUrl(@"<#host#>", @"<#ver#>", @"<#path#>");
 }
 
-- (HYBHttp)method {
-        return HYBHttp<#method#>;
+- (AMHttp)method {
+        return AMHttpPost;
 }
 
 - (NSString *)description {
@@ -100,9 +85,9 @@ vTempleh = '''
 //  Copyright © 2017年 liubo. All rights reserved.
 //
 
-#import "HYBView.h"
+#import "AMView.h"
 
-@interface ${name}View : HYBView
+@interface ${name}View : AMView
 
 
 @end
@@ -122,7 +107,7 @@ vTemplem = '''
 
 @implementation ${name}View
 
-- (void)hyb_setupViews {
+- (void)am_setupViews {
 
 }
 
@@ -140,10 +125,9 @@ cTempleh = '''
 //
 
 #import <UIKit/UIKit.h>
-#import "HYBViewControllerProtocol.h"
-#import "UIViewController+UIDefultUIStyle.h"
 
-@interface ${name}ViewController : UIViewController <HYBViewControllerProtocol, HYBDefualtStyleUIProtocol>
+
+@interface ${name}ViewController : UIViewController 
 
 @end
 
@@ -169,21 +153,21 @@ cTemplem = '''
 
 #pragma mark - Override Methods
 //1.设置导航
-- (void)hyb_layoutNavigation {
+- (void)am_layoutNavigation {
 }
 
 //2.初始化数据
-- (void)hyb_setUpData {
+- (void)am_setUpData {
 
 }
 
 //3.摆放view
-- (void)hyb_addSubviews {
+- (void)am_addSubviews {
 
 }
 
 //4.获取新数据刷新
-- (void)hyb_getNewData {
+- (void)am_getNewData {
 }
 #pragma mark - Intial Methods
 

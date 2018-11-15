@@ -120,8 +120,8 @@ def print_implemention(className , mapKeys):
             return requestUrl(@"<#host#>", @"<#ver#>", @"<#path#>");
         }
 
-        - (HYBHttp)method {
-            return HYBHttp<#method#>;
+        - (AMHttp)method {
+            return AMHttpPost;
         }
 
         - (NSString *)description {

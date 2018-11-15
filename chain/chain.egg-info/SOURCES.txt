@@ -1,0 +1,8 @@
+setup.py
+chain/AInterface.py
+chain/__init__.py
+chain.egg-info/PKG-INFO
+chain.egg-info/SOURCES.txt
+chain.egg-info/dependency_links.txt
+chain.egg-info/requires.txt
+chain.egg-info/top_level.txt
