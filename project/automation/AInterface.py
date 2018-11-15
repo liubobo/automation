@@ -16,6 +16,9 @@ from ATool import gen_hyb_xib
 def sort():
     sortcode.sortcode()
 
+def sortbylen():
+    sortcode.sortbylen()
+
 def hidden_folder():
     map(folderUtil.hidden_folder, set(Util.readlines_from_stdin()))
 

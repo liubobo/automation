@@ -21,20 +21,11 @@
       <file leaf-file-name="sortcode.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/automation/ATool/sortcode.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="83" column="12" lean-forward="true" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="12" />
+            <state relative-caret-position="225">
+              <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
               <folding>
                 <element signature="e#45#63#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="typing.pyi" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2/typing.pyi">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="256" selection-start-line="256" selection-end-line="257" />
             </state>
           </provider>
         </entry>
@@ -104,16 +95,17 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="696" />
-    <option name="y" value="434" />
-    <option name="width" value="1138" />
-    <option name="height" value="633" />
+    <option name="x" value="483" />
+    <option name="y" value="178" />
+    <option name="width" value="1857" />
+    <option name="height" value="702" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -136,7 +128,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -430,16 +421,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="696" y="434" width="1138" height="633" extended-state="0" />
+    <frame x="534" y="378" width="1857" height="702" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5006068" side_tool="true" visible="true" weight="0.07768595" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.054466233" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993932" weight="0.05514316" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.0" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23722628" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.104132235" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -459,22 +451,22 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22966935" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.050075874" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Data View" order="4" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Python Console" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.071428575" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39908952" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="9" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,126 +488,25 @@
           <line>74</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/automation/ATool/sortcode.py</url>
-          <line>59</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/automation/ATool/sortcode.py</url>
-          <line>57</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/automation/ATool/sortcode.py</url>
-          <line>44</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="19" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/automation/cell.py" />
-    <entry file="file://$PROJECT_DIR$/automation/genControls.py" />
-    <entry file="file://$PROJECT_DIR$/automation/getter.py" />
-    <entry file="file://$PROJECT_DIR$/automation/jsonmodel_decoder.py" />
-    <entry file="file://$PROJECT_DIR$/automation/jsontofield.py" />
-    <entry file="file://$PROJECT_DIR$/automation/mkmvc.py" />
-    <entry file="file://$PROJECT_DIR$/automation/mvc.py" />
-    <entry file="file://$PROJECT_DIR$/automation/mydict.py" />
-    <entry file="file://$PROJECT_DIR$/automation/sortcode.py" />
-    <entry file="file://$PROJECT_DIR$/automation/vcTemple.py" />
-    <entry file="file:///Library/Python/2.7/site-packages/pip-9.0.1-py2.7.egg/pip/utils/ui.py" />
-    <entry file="file://$PROJECT_DIR$/automation/genControls.py" />
-    <entry file="file://$PROJECT_DIR$/automation/cell.py" />
-    <entry file="file://$PROJECT_DIR$/automation/getter.py" />
-    <entry file="file://$PROJECT_DIR$/automation/jsontofield.py" />
-    <entry file="file://$PROJECT_DIR$/automation/prop.py" />
-    <entry file="file://$PROJECT_DIR$/automation/sortcode.py" />
-    <entry file="file://$PROJECT_DIR$/automation/view.py" />
-    <entry file="file://$PROJECT_DIR$/automation/mkmvc.py" />
-    <entry file="file://$PROJECT_DIR$/automation/jsonmodel_decoder.py" />
-    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/xml/etree/ElementTree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="477" selection-start-line="477" selection-end-line="477" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automation/mydict.py" />
-    <entry file="file://$PROJECT_DIR$/automation/util.py" />
-    <entry file="file://$PROJECT_DIR$/automation/xib2file.py" />
-    <entry file="file://$PROJECT_DIR$/automation/templates/button.html" />
-    <entry file="file://$PROJECT_DIR$/automation/templates/cell.html" />
-    <entry file="file://$PROJECT_DIR$/automation/templates/collection.html" />
-    <entry file="file://$PROJECT_DIR$/automation/templates/control.html" />
-    <entry file="file://$PROJECT_DIR$/automation/templates/costom.html" />
-    <entry file="file://$PROJECT_DIR$/automation/templates/imageView.html" />
-    <entry file="file://$PROJECT_DIR$/automation/templates/label.html" />
-    <entry file="file://$PROJECT_DIR$/automation/templates/progressView.html" />
-    <entry file="file://$PROJECT_DIR$/automation/templates/result.m" />
-    <entry file="file://$PROJECT_DIR$/automation/templates/scrollView.html" />
-    <entry file="file://$PROJECT_DIR$/automation/templates/slider.html" />
-    <entry file="file://$PROJECT_DIR$/automation/templates/switch.html" />
-    <entry file="file://$PROJECT_DIR$/automation/templates/tableView.html" />
-    <entry file="file://$PROJECT_DIR$/automation/templates/vc.html" />
-    <entry file="file://$PROJECT_DIR$/automation/templates/view.html" />
-    <entry file="file://$PROJECT_DIR$/automation/mvc.py" />
-    <entry file="file://$PROJECT_DIR$/automation/templates/textField.html" />
-    <entry file="file://$PROJECT_DIR$/automation/templates/textView.html" />
-    <entry file="file://$PROJECT_DIR$/automation/templates/v.html" />
-    <entry file="file://$PROJECT_DIR$/automation/ATool/Util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automation/ATool/getters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automation/ATool/props.py">
+    <entry file="file://$PROJECT_DIR$/automation/ATool/sortcode.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automation/AInterface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automation/ATool/wk.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/-1247972723/__builtin__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="3387" column="12" lean-forward="true" selection-start-line="3387" selection-start-column="12" selection-end-line="3387" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2/typing.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="256" selection-start-line="256" selection-end-line="257" />
+          <caret line="48" column="16" lean-forward="true" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+          <folding>
+            <element signature="e#45#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/automation/ATool/sortcode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="83" column="12" lean-forward="true" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="12" />
+        <state relative-caret-position="225">
+          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
           <folding>
             <element signature="e#45#63#0" expanded="true" />
           </folding>
