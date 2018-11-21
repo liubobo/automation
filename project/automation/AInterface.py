@@ -10,6 +10,7 @@ from ATool import folderUtil
 from ATool import gen_hyb_xib
 from ATool import jsontofield
 from ATool import mvcTempleMaker
+from ATool import MylayoutXibParse
 from ATool.Util import simulate
 from ATool.Util import readlines_from_stdin
 
@@ -44,9 +45,8 @@ def output_temple_type(mtype):
 def output_xib():
     map(xibparse.gen_xib_file,Util.readlines_from_stdin())
 
-def gen_hyb():
-    map(gen_hyb_xib.gen_xib_file,Util.readlines_from_stdin())
-
+def gen_mylayout():
+    map(MylayoutXibParse.gen_xib_file,Util.readlines_from_stdin())
 
 
 #useless
