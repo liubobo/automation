@@ -22,8 +22,8 @@
       <file leaf-file-name="MylayoutXibParse.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/automation/ATool/MylayoutXibParse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+            <state relative-caret-position="370">
+              <caret line="139" column="4" selection-start-line="139" selection-start-column="4" selection-end-line="139" selection-end-column="4" />
               <folding>
                 <element signature="e#13#24#0" expanded="true" />
               </folding>
@@ -123,8 +123,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="325" />
-    <option name="y" value="208" />
+    <option name="x" value="363" />
+    <option name="y" value="109" />
     <option name="width" value="1971" />
     <option name="height" value="866" />
   </component>
@@ -456,16 +456,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="565" y="202" width="1971" height="866" extended-state="0" />
+    <frame x="401" y="23" width="1971" height="866" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.27008814" side_tool="true" visible="true" weight="0.057217166" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.501296" side_tool="true" visible="true" weight="0.22886866" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.72991186" visible="true" weight="0.057217166" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49928573" weight="0.1430429" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.72991186" weight="0.38491547" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.498704" visible="true" weight="0.22886866" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15396579" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -758,8 +758,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/automation/ATool/MylayoutXibParse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+        <state relative-caret-position="370">
+          <caret line="139" column="4" selection-start-line="139" selection-start-column="4" selection-end-line="139" selection-end-column="4" />
           <folding>
             <element signature="e#13#24#0" expanded="true" />
           </folding>

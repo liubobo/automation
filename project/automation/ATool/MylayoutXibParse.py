@@ -137,7 +137,7 @@ def gen_xib_file(file_path):
     out_file = os.path.dirname(file_path) + '/' + file_name + '1.m'
     with open(out_file, 'w') as rf:
         rf.write(html)
-        os.system('open ' + out_file)
+    os.system('open ' + out_file)
 
 
 
