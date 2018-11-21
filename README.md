@@ -16,7 +16,6 @@ git clone https://github.com/liubobo/automation.git
 cd automation/project && sudo /usr/bin/python setup.py develop&&sudo python setup.py develop
 点击安装Services下的workflow
 
-注：
 如果喜欢写链式代码的可以安装chain目录下的代码，这个需要完善，实例可以看这里
 https://github.com/liubobo/chain
 ```
