@@ -22,6 +22,7 @@ def gen_xib_file(file_path):
         return []
 
     def ui_type(node):
+        if node.attrib.get('customClass'):return node.attrib.get('customClass')
         return 'UI'+Util.toCap(node.tag)
 
     def ui_name(node):
