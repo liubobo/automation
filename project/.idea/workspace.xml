@@ -14,7 +14,7 @@
     <SUITE FILE_PATH="coverage/project$sortcode.coverage" NAME="sortcode Coverage Results" MODIFIED="1542186481365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/automation/ATool" />
     <SUITE FILE_PATH="coverage/project$cell.coverage" NAME="cell Coverage Results" MODIFIED="1517478743602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/automation" />
     <SUITE FILE_PATH="coverage/project$getter.coverage" NAME="getter Coverage Results" MODIFIED="1517533902978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/automation" />
-    <SUITE FILE_PATH="coverage/project$MylayoutXibParse.coverage" NAME="MylayoutXibParse Coverage Results" MODIFIED="1542790724607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/automation/ATool" />
+    <SUITE FILE_PATH="coverage/project$MylayoutXibParse.coverage" NAME="MylayoutXibParse Coverage Results" MODIFIED="1542853911198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/automation/ATool" />
     <SUITE FILE_PATH="coverage/project$xib2file.coverage" NAME="xib2file Coverage Results" MODIFIED="1517563113554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/automation" />
   </component>
   <component name="FileEditorManager">
@@ -22,10 +22,22 @@
       <file leaf-file-name="MylayoutXibParse.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/automation/ATool/MylayoutXibParse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
+            <state relative-caret-position="331">
+              <caret line="80" column="73" selection-start-line="80" selection-start-column="73" selection-end-line="80" selection-end-column="73" />
               <folding>
                 <element signature="e#13#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="xibparse.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/automation/ATool/xibparse.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="421">
+              <caret line="251" column="10" lean-forward="true" selection-start-line="250" selection-start-column="3" selection-end-line="253" selection-end-column="37" />
+              <folding>
+                <element signature="e#16#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -34,8 +46,8 @@
       <file leaf-file-name="new_xib_parse.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/automation/ATool/templates/new_xib_parse.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+            <state relative-caret-position="555">
+              <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -52,8 +64,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>protocols</find>
-      <find>buttonTouchs</find>
       <find>string</find>
       <find>object</find>
       <find>layoutSubViews</find>
@@ -63,7 +73,7 @@
       <find>fileType</find>
       <find>getPops</find>
       <find>attrib</find>
-      <find>item type is</find>
+      <find />
       <find>hyb</find>
       <find>etree</find>
       <find>file_path</find>
@@ -82,6 +92,8 @@
       <find>myC</find>
       <find>Cen</find>
       <find>glo</find>
+      <find>file_type</find>
+      <find>root_node_id</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -123,10 +135,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="392" />
-    <option name="y" value="23" />
-    <option name="width" value="1971" />
-    <option name="height" value="801" />
+    <option name="x" value="563" />
+    <option name="y" value="32" />
+    <option name="width" value="1763" />
+    <option name="height" value="982" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -150,13 +162,6 @@
               <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="automation" type="462c0819:PsiDirectoryNode" />
               <item name="ATool" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="automation" type="462c0819:PsiDirectoryNode" />
-              <item name="ATool" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -456,17 +461,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="392" y="23" width="1971" height="801" extended-state="0" />
+    <frame x="563" y="32" width="1763" height="982" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.501296" side_tool="true" visible="true" weight="0.3622159" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.2707728" side_tool="true" visible="true" weight="0.15480226" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.72991186" weight="0.38491547" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.498704" visible="true" weight="0.3622159" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15396579" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7292272" visible="true" weight="0.15480226" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4979663" weight="0.22094926" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.06449739" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -486,22 +491,22 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22966935" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.050075874" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Data View" order="4" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="9" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.071428575" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39908952" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Python Console" order="9" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,7 +535,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/automation/ATool/MylayoutXibParse.py</url>
-          <line>11</line>
+          <line>10</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
@@ -538,6 +543,23 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/automation/ATool/MylayoutXibParse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1920">
+          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
+          <folding>
+            <element signature="e#13#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/ATool/templates/new_xib_parse.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/automation/ATool/MylayoutXibParse.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -559,9 +581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-          <folding>
-            <element signature="e#16#36#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -578,9 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-          <folding>
-            <element signature="e#16#36#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -588,9 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#16#36#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -638,11 +651,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/automation/ATool/getters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-192">
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-192" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/automation/ATool/sortcode.py">
@@ -652,13 +661,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/automation/ATool/xml2json.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="37" column="15" lean-forward="true" selection-start-line="37" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/ATool/xml2json.py" />
     <entry file="file://$PROJECT_DIR$/automation/ATool/mydict.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -679,9 +682,6 @@
           <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
         </state>
       </provider>
-    </entry>
-    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/string.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/automation/ATool/UI.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -722,23 +722,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/automation/ATool/xibparse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="251" column="10" lean-forward="true" selection-start-line="250" selection-start-column="3" selection-end-line="253" selection-end-column="37" />
-          <folding>
-            <element signature="e#16#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/automation/AInterface.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
           <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#16#36#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -751,15 +738,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/automation/ATool/templates/new_xib_parse.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+        <state relative-caret-position="555">
+          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automation/ATool/xibparse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="251" column="10" lean-forward="true" selection-start-line="250" selection-start-column="3" selection-end-line="253" selection-end-column="37" />
+          <folding>
+            <element signature="e#16#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/automation/ATool/MylayoutXibParse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
+        <state relative-caret-position="331">
+          <caret line="80" column="73" selection-start-line="80" selection-start-column="73" selection-end-line="80" selection-end-column="73" />
           <folding>
             <element signature="e#13#24#0" expanded="true" />
           </folding>

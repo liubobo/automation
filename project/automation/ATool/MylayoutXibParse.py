@@ -6,11 +6,10 @@ from  mydict import MyDict as my
 import xml.etree.ElementTree as etree
 import os
 
-f_type = 'vc'
 
 def gen_xib_file(file_path):
     f = open(file_path,'r')
-
+    f_type = 'vc'
     tree = etree.parse(file_path)
     root = tree.getroot()
     root_node_id = None
@@ -39,19 +38,13 @@ def gen_xib_file(file_path):
             if x.tag == 'subviews':
                 return True
         return False
-
     def file_type():
-        global f_type
-        if root_node_id == 'iN0-l3-epB':
-            f_type = 'view'
-
-        if root_node_id == 'H2p-sc-9uM':
-            f_type = 'cell'
         return f_type
 
     #need for output
     def gen_prop(node):
         if node.attrib.get('id') == root_node_id:return ''
+        if ui_name(node) == 'H2p-sc-9uMTableViewCellContentView':return ''
         return '@property(nonatomic, strong) '+ui_type(node)+'*'+ ui_name(node)+';'
 
     def gen_add(node):
@@ -64,7 +57,7 @@ def gen_xib_file(file_path):
             if file_type() =='view':
                 l = l.replace('self.view','self')
             if file_type() =='cell':
-                l = l.replace('self.view','self.contentView')
+                l = l.replace('self.H2p-sc-9uMTableViewCellContentView','self.contentView')
 
             return l
         return ''
@@ -86,6 +79,8 @@ def gen_xib_file(file_path):
         return _${name};
     }
         '''
+        if ui_name(node) == 'H2p-sc-9uMTableViewCellContentView':return ''
+
         my_layout = gen_mylayout(node) if gen_mylayout(node) else ''
         return string.Template(s).safe_substitute({'type':ui_type(node),'name':ui_name(node),'mylayout':my_layout})
 
@@ -123,12 +118,17 @@ def gen_xib_file(file_path):
         rect_list = is_ui_node(node)
         is_ui =  len(rect_list)
         if not is_ui: continue
-        if not root_node_id: root_node_id = node.attrib.get('id')
+        if not root_node_id:
+            root_node_id = node.attrib.get('id')
+            if node.tag == 'tableViewCell':
+                f_type = 'cell'
+            if root_node_id == 'iN0-l3-epB':
+                f_type = 'view'
+
         ui = UIObj(node)
         ui_list.append(ui)
 
         gen_mylayout(node)
-
 
 
     file_name = os.path.splitext(os.path.basename(file_path))[0]
@@ -141,4 +141,4 @@ def gen_xib_file(file_path):
 
 
 
-# gen_xib_file(u'/Users/hc/Desktop/HengYiBao的副本/ViewController.xib')
+# gen_xib_file(u'/Users/hc/Desktop/TableViewCell.xib')
