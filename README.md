@@ -2,7 +2,7 @@
 iOS代码自动化工具
 ---
 workflow，目前可以嵌入Python，Ruby，shell等脚本语言，利用自己喜欢的语言实现插件功能，
-```
+
 ## 安装方式
 
 git clone https://github.com/liubobo/automation.git
